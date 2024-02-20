@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+
+    <picture>
+
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+
+        <!-- tem que estar sempre em ordem de tamanho as imagens no código source -->
+
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5 &#x1F493 </p>
+
+    <audio preload="auto" autoplay controls>
+
+        <source src="midia/beat-inspirador.mp3" type="audio/mpeg">
+
+        <!-- FORMATOS DE AUDIOS = MP3, WAV , OGG -->
+    </audio>
+
+    <!-- ARQUIVOS DE ALTA QUALIDADE SÃO RECOMENDADOS APENAS PARA DOWNLOADS EXTERNOS, POIS ARQUIVOS PESADOS DE ALTA QUALIDADE PARA NAVEGAÇÃO WEB É PESSIMO, POIS DEIXA O SITE MUITO LENTO, O USUARIO QUER SITE PRÁTICO E RÁPIDO! -->
