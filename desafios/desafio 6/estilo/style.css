@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+* { /* configuração geral do site */
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /* text-transform: uppercase; usado para deixar todas as letras em letra maiúscula */
+    font-variant: small-caps; /* small-caps usado pra deixar apenas as primeiras letras da palavra em maiusculo*/
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none; /* none é para retirar o sublinhado da palavra*/
+    font-weight: bolder;
+}
+
+ header a:hover, footer a:hover {
+    text-decoration: underline /*underline é usado pra deixar sublinhado */
+    /* hover é usado para dar 'vida' ao passar o mouse em cima da tag escolhida, nesse caso foi a tag 'a' que são os links*/
+}
+
+section{  /* section geral */
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*espaçamento entre as linhas*/
+    padding-left: 30px;
+}
+
+section.normal { /*classe normal*/
+    background-color: white;
+    color: black;
+}
+
+
+section.imagem{ /*classe imagem*/
+    background-color: rgb(52, 52, 52);
+    color: white;
+
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.252);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
