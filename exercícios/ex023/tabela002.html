@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -19,10 +20,30 @@
             padding: 10px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
 
+        thead > tr > th {  /* função sticky = muito util para tabelas grandes, os titulos acompanham os dados com forme a rolagem do site */
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd) {  /*odd = impar / ou 2n-1 */
+            background-color: lightgray;
+        }  /* efeito zebrado na coluna */
+
+        tbody > tr:nth-child(even) { /* even = par / ou 2n */
+            background-color: white;
         }
 
         td.num{
@@ -37,12 +58,16 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+             CAPTION
              THEAD
                 TR, TD, TH
              TBODY
                 TR, TD, TH
              TFOOT
                 TR, TD, TH
+
+                th = título da tabela
+                td = dado da tabela
     -->
 
     <table>
@@ -170,5 +195,12 @@
             </tr>
         </tbody>      
     </table>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum asperiores, iste recusandae debitis porro modi fugit molestiae autem amet maxime nisi dicta eum quidem voluptatum officia, laboriosam animi? Accusantium, voluptas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, ratione sit ab reiciendis, unde perferendis laudantium numquam repellat et voluptates ipsa officia voluptas voluptatibus cum aspernatur eveniet, aliquid aperiam itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione voluptas, consectetur quae perspiciatis cupiditate maxime atque facere assumenda delectus aperiam aspernatur eos nulla ipsum sed recusandae voluptatem doloribus nesciunt?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium eveniet aspernatur rerum sint illo non ipsum laboriosam quos mollitia impedit alias veniam inventore, dignissimos quaerat veritatis facilis eligendi neque error!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum asperiores, iste recusandae debitis porro modi fugit molestiae autem amet maxime nisi dicta eum quidem voluptatum officia, laboriosam animi? Accusantium, voluptas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, ratione sit ab reiciendis, unde perferendis laudantium numquam repellat et voluptates ipsa officia voluptas voluptatibus cum aspernatur eveniet, aliquid aperiam itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione voluptas, consectetur quae perspiciatis cupiditate maxime atque facere assumenda delectus aperiam aspernatur eos nulla ipsum sed recusandae voluptatem doloribus nesciunt?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium eveniet aspernatur rerum sint illo non ipsum laboriosam quos mollitia impedit alias veniam inventore, dignissimos quaerat veritatis facilis eligendi neque error!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum asperiores, iste recusandae debitis porro modi fugit molestiae autem amet maxime nisi dicta eum quidem voluptatum officia, laboriosam animi? Accusantium, voluptas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, ratione sit ab reiciendis, unde perferendis laudantium numquam repellat et voluptates ipsa officia voluptas voluptatibus cum aspernatur eveniet, aliquid aperiam itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione voluptas, consectetur quae perspiciatis cupiditate maxime atque facere assumenda delectus aperiam aspernatur eos nulla ipsum sed recusandae voluptatem doloribus nesciunt?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium eveniet aspernatur rerum sint illo non ipsum laboriosam quos mollitia impedit alias veniam inventore, dignissimos quaerat veritatis facilis eligendi neque error!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum asperiores, iste recusandae debitis porro modi fugit molestiae autem amet maxime nisi dicta eum quidem voluptatum officia, laboriosam animi? Accusantium, voluptas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, ratione sit ab reiciendis, unde perferendis laudantium numquam repellat et voluptates ipsa officia voluptas voluptatibus cum aspernatur eveniet, aliquid aperiam itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione voluptas, consectetur quae perspiciatis cupiditate maxime atque facere assumenda delectus aperiam aspernatur eos nulla ipsum sed recusandae voluptatem doloribus nesciunt?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium eveniet aspernatur rerum sint illo non ipsum laboriosam quos mollitia impedit alias veniam inventore, dignissimos quaerat veritatis facilis eligendi neque error!</p>
 </body>
 </html>
