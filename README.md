@@ -5,3 +5,4 @@
 
 <a href="https://gustavocorreia10.github.io/projeto-android/" target="_blank">Executar o Projeto Android</a>
 
+<a href="https://gustavocorreia10.github.io/projeto-cordel/" target="_blank">Executar o Projeto Cordel</a>
